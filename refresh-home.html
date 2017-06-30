@@ -8,18 +8,23 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
 <style>
-
-	body
+	body,html
 		{
-			background-image:url("https://s-media-cache-ak0.pinimg.com/564x/7f/81/ce/7f81ce29a09f47eb1dcf030dbafa317f.jpg");
-			background-size: 100%;
+		height:100%;	}
+	.body
+		{
+			background-image:url("https://thenerdyriddle.files.wordpress.com/2017/06/corzon.jpg?w=748");
+			background-size: cover;
 			color:white;
 			font-family:dosis;
+			height:60%;
+			
 		}
 	.right
 		{
@@ -29,12 +34,27 @@
 	.top1
 		{
 		margin-top:20px;	
-		margin-left:10px;
+		margin-left:5px;
 		}
 	.top2
 		{
 		margin-top: 200px;
 		
+		}
+		.hover
+		{
+		transition-duration: 0.4s;
+		}
+	.round-one
+		{
+		background:#002147; <!--Oxford Blue-->
+		border-radius:15%;
+		button-radius:100px;
+		}
+	.top1:hover
+		{
+		background:#4682b4; <!--Steel Blue-->
+		text-color:yellow;  	
 		}
 	.image-alrt
 		{
@@ -50,24 +70,33 @@
 	{
 		margin:auto;
 	}
+	button:hover
+	{
+	background:red;
+	}
+	
 </style>
 
 </head>
-<body>
-	<div class="container container-liquid";>
+<body class="body">
+	<div class="container container-flow";>
 		<div class="row">
 			<div class="col-lg-8">
 				<h1> Hercules</h1>
 			</div>
 			<div class="right">
-				<i class="top1 fa fa-home fa-3x"></i>
-				<i class="top1 fa fa-user fa-3x"></i>
-				<i class="top1 fa fa-settings fa-3x"></i>
-				<i class="top1 fa fa-users fa-3x"></i>
+				<button class="round-one top1 hover btn"><i class="fa fa-home fa-2x"></i></button>
+				<button class="round-one top1 hover btn"><i class="fa fa-user fa-2x"></i></button>
+				<button class="round-one top1 hover btn"><i class="fa fa-users fa-2x"></i></button>
+				<button class="round-one top1 hover btn" data-toggle="collapse" data-target="#settings"><i class="fa fa-gear fa-2x"></i></button>
+					<div id="settings" class="collapse">
+						<button class="btn">Notifications</button><br>
+						<button class="btn">Log Out</button>
+					</div>
 			</div>
 		
 		</div>
-		<div class = "container container-flow">
+		<div class = "container-fluid">
 		<div class="carousel slide" data-ride="carousel" id="carousel">
 		<!-- The Fricking dot dots-->
 			 <ol class="carousel-indicators">
@@ -105,7 +134,7 @@
 				</div>
 					
 				<div class="item">
-					<img class="image"src="http://wallpapercave.com/wp/wp1911989.jpg" style="width:800px;height:450px;" alt="Orphan Black">
+					<img class="image"src="http://cdn1us.denofgeek.com/sites/denofgeekus/files/styles/main_wide/public/3/41//417168-orphan-black-orphan-black.jpg?itok=KZMPRug4" style="width:800px;height:450px;" alt="Orphan Black">
 					<div class="carousel-caption">
 						<h3>Orphan Black</h3>
 						<br>
@@ -141,15 +170,13 @@
 		<!--The links-->
 			<a class="left carousel-control" data-slide="prev" href="#carousel">
 				
-				<i class=" top2 fa fa-angle-left"></i>
+				<i class=" top2 fa fa-arrow-left"></i>
 			</a>
 			<a class="right carousel-control" data-slide="next" href="#carousel">
-				<i class=" top2 fa fa-angle-right"></i>
+				<i class=" top2 fa fa-arrow-right"></i>
 			</a>
 		</div>
 	</div>
 	</div>
-
-
 </body>
 </html>

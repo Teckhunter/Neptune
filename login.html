@@ -1,0 +1,121 @@
+<html>
+<head>
+<title>Rudimentary Login</title>
+<style>
+	html
+{
+  background-size:cover;
+}
+body
+{
+  font-size:15px;
+  background-size:cover;
+}
+#log-in
+{
+  background:#89e894;
+  color:green;
+}
+#red
+{
+  background:red;
+}
+.full
+{
+  width:100%;
+  border-radius:5px;
+  border:none;
+  padding-left:15px;
+  padding-top:5px;
+  padding-bottom:5px;
+  display:inline;
+}
+#log-in .user
+{
+  padding-top:30px;
+  padding-bottom:15px;
+}
+#log-in .password
+{
+  padding-top:15px;
+  padding-bottom:30px;
+}
+input .full
+{
+  border:0px;
+}
+input:hover
+{
+  border:0px;
+  background:#d0f0c0;      /*Tea Green*/
+  }               
+input:focus
+{
+  border:none;
+}
+div .sign-in
+{
+  align-items:right;
+  display:flex;
+}
+div .sign-in button
+{
+  width:60%;
+  background:white;
+  padding-top:5px;
+  padding-bottom:5px;
+  font-size:15px;
+  margin-bottom:15px;
+  margin-left:20%;
+  color:#74365;
+}
+div .sign-in button:hover
+{
+  background:#74c365;
+  color:white;
+}
+h2
+{
+  color:white;
+  text-align:center;
+}
+
+.ruven
+{
+  background:url(http://wallup.net/wp-content/uploads/2016/01/168680-faded-green-nature-mist-748x421.jpg);
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:1440px;
+  padding-bottom:10%;
+  width:100%;
+  height:100%;
+}
+.central
+{
+  padding-top:10%;
+  margin:auto;
+}
+</style>
+</head>
+<body>
+      <div class="ruven col-lg-12">
+        <div class="central">
+        <div class="col-lg-4">
+        </div>
+        <div id="log-in" class="col-lg-4">
+          <h2>Log In</h2>
+          <div class="container user">
+            <input class="full"type="text" placeholder="Username">
+          </div>
+          <div class="container password">
+            <input class="full" type="password" placeholder="Password">
+          </div>
+          <div class="container sign-in flex">
+             <button class="btn btn-block" type="submit">Sign In</button>
+          </div>
+         </div>
+        </div>
+   </div>
+</body>
+</html>
+ 

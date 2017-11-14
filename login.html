@@ -1,121 +1,117 @@
 <html>
 <head>
-<title>Rudimentary Login</title>
-<style>
-	html
-{
-  background-size:cover;
-}
-body
-{
-  font-size:15px;
-  background-size:cover;
-}
-#log-in
-{
-  background:#89e894;
-  color:green;
-}
-#red
-{
-  background:red;
-}
-.full
-{
-  width:100%;
-  border-radius:5px;
-  border:none;
-  padding-left:15px;
-  padding-top:5px;
-  padding-bottom:5px;
-  display:inline;
-}
-#log-in .user
-{
-  padding-top:30px;
-  padding-bottom:15px;
-}
-#log-in .password
-{
-  padding-top:15px;
-  padding-bottom:30px;
-}
-input .full
-{
-  border:0px;
-}
-input:hover
-{
-  border:0px;
-  background:#d0f0c0;      /*Tea Green*/
-  }               
-input:focus
-{
-  border:none;
-}
-div .sign-in
-{
-  align-items:right;
-  display:flex;
-}
-div .sign-in button
-{
-  width:60%;
-  background:white;
-  padding-top:5px;
-  padding-bottom:5px;
-  font-size:15px;
-  margin-bottom:15px;
-  margin-left:20%;
-  color:#74365;
-}
-div .sign-in button:hover
-{
-  background:#74c365;
-  color:white;
-}
-h2
-{
-  color:white;
-  text-align:center;
-}
+        <title>Student Registration Form</title>
+		<style type="text/css">
+		h3{
+        font-family: Calibri; 
+        font-size: 22px; 
+        font-style: normal; 
+        font-weight: bold; 
+        color:Black;
+        text-align: center; 
+        text-decoration: underline 
+		}
 
-.ruven
-{
-  background:url(http://wallup.net/wp-content/uploads/2016/01/168680-faded-green-nature-mist-748x421.jpg);
-  background-position:center;
-  background-repeat:no-repeat;
-  background-size:1440px;
-  padding-bottom:10%;
-  width:100%;
-  height:100%;
-}
-.central
-{
-  padding-top:10%;
-  margin:auto;
-}
+        
+
+		table{
+        font-family: Calibri; 
+        color:white; 
+        font-size: 14px; 
+        font-style: normal;
+        text-align:; 
+        background-color: SlateGray; 
+        border-collapse: collapse; 
+        border: 2px solid gray
+	}
+
+        
+
+table.inner{
+        border: 0px
+	}
 </style>
 </head>
 <body>
-      <div class="ruven col-lg-12">
-        <div class="central">
-        <div class="col-lg-4">
-        </div>
-        <div id="log-in" class="col-lg-4">
-          <h2>Log In</h2>
-          <div class="container user">
-            <input class="full"type="text" placeholder="Username">
-          </div>
-          <div class="container password">
-            <input class="full" type="password" placeholder="Password">
-          </div>
-          <div class="container sign-in flex">
-             <button class="btn btn-block" type="submit">Sign In</button>
-          </div>
-         </div>
-        </div>
-   </div>
+<h3>STUDENT REGISTRATION FORM</h3>
+<form>
+        <table align="center" cellpadding = "10">
+<tr>
+        <td>FIRST NAME</td>
+        <td><input type="text" name="First_Name" maxlength="30"/>
+        (max 30 characters a-z and A-Z)
+        </td>
+</tr>
+<tr>
+        <td>LAST NAME</td>
+        <td><input type="text" name="Last_Name" maxlength="30"/>
+        (max 30 characters a-z and A-Z)
+        </td>
+</tr>
+<tr>
+        <td>EMAIL ID</td>
+        <td><input type="text" name="Email_Id" maxlength="100" />
+        </td>
+</tr>
+<tr>
+        <td>MOBILE NUMBER</td>
+        <td>
+        <input type="text" name="Mobile_Number" maxlength="10" />
+        (10 digit number)
+        </td>
+</tr>
+<tr>
+        <td>GENDER</td>
+        <td>
+        Male <input type="radio" name="Gender" value="Male" />
+        Female <input type="radio" name="Gender" value="Female" />
+        </td>
+</tr>
+<tr>
+        <td>ADDRESS <br /><br /><br /></td>
+        <td><textarea name="Address" rows="4" cols="30"></textarea>
+        </td>
+</tr>
+<tr>
+        <td>CITY</td>
+        <td><input type="text" name="City" maxlength="30" />
+        (max 30 characters a-z and A-Z)
+</td>
+</tr>
+<tr>
+        <td>PIN CODE</td>
+        <td><input type="text" name="Pin_Code" maxlength="6" />
+        (6 digit number)
+        </td>
+</tr>
+<tr>
+        <td>STATE</td>
+        <td><input type="text" name="State" maxlength="30" />
+        (max 30 characters a-z and A-Z)
+        </td>
+</tr>
+<tr>
+        <td>COUNTRY</td>
+        <td><input type="text" name="Country" value="India" readonly="readonly" />
+        </td>
+</tr>
+<tr>
+        <td>COURSES<br />APPLIED FOR</td>
+<td>
+        B-tech<input type="radio" name="Course" value="B-tech" />
+        B.Sc<input type="radio" name="Course" value="B.Sc" />
+        B.Com<input type="radio" name="Course" value="B.Com" />
+        M-tech<input type="radio" name="Course" value="M.tech" />
+        MBA<input type="radio" name="Course" value="MBA" />
+</td>
+</tr>
+<tr>
+        <td colspan="2" align="center">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        </td>
+</tr>
+</table>
+</form>
 </body>
 </html>
- 
